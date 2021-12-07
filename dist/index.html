@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - formulario de encuesta</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">¿Cuántos libros leíste en cuarentena?</h1>
+    <p id="description" class="description text-center">
+      Nos gustaria saber si el espirtú de perderse en los mundos literarios, aún sigue vivo
+    </p>
+  </header>
+ <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Nombre</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Nombre Completo"
+        required
+      />
+    </div>
+<div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Ingrese su email"
+        required
+      />
+    </div>
+   <div class="form-group">
+      <label id="number-label" for="number"
+        >Edad<span class="clue"></span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="20"
+        max="99"
+        class="form-control"
+        placeholder="Edad"
+      />
+    </div>
+   <div class="form-group">
+      <p>¿Cuál es tu género literario preferido?</p>
+      <select id="dropdown" name="género" class="form-control" required>
+        <option disabled selected value>Selecciona tu género</option>
+        <option value="novela">Novela</option>
+        <option value="Ensayo">Ensayo</option>
+        <option value="Poesia">Poesia</option>
+        <option value="Teatro">Obra de Teatro</option>
+        <option value="Cuentos">Cuentos</option>
+      </select>
+    </div>
+ <div class="form-group">
+      <p>¿Recomendarías a un amigue que leyes libros?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="Definitivamente"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitivamente</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+        value="tal vez"
+          type="radio"
+          class="input-radio"
+        />Tal vez</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="no estoy seguro "
+          type="radio"
+          class="input-radio"
+        />No estoy seguro</label
+      >
+    </div>
+     <div class="form-group">
+      <p>
+       ¿Cúal de estos libros recomendarias?      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Seleccciona una opción</option>
+        <option value="elaleph">El Aleph</option>
+        <option value="rayuela">Rayuela</option>
+        <option value="lossientelocos">Los siete locos</option>
+        <option value="martinfierro">Martin Fierro</option>
+      </select>
+    </div>
+   <div class="form-group">
+      <p>
+        ¿Cúal de las siguientes autoras argentinas has leído?
+        <span class="clue">(chequea todas o la que prefieras)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="alejandrapizarnik"
+          type="checkbox"
+          class="input-checkbox"
+        />Alejandra Pizarnik</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="victoriaocampo"
+          type="checkbox"
+          class="input-checkbox"
+        />Victoria Ocampo</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="claudiapiñeiro"
+          type="checkbox"
+          class="input-checkbox"
+        />Claudia Piñeiro</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="alfonsinastorni"
+          type="checkbox"
+          class="input-checkbox"
+        />Alfonsina Storni</label
+      >
+     <div class="form-group">
+      <p>¿Algún comentario o sugerencia?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Ingrese su comentario aquí..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
